@@ -44,3 +44,36 @@ e5db5f1 commit for 3 commands only
 -------------------------------------------------------------------------------------------------------------------------------
 //senario : if your frnd has did some commit and u haved pull yet and did changes and try to push to the git remote
 it will give error like this ! [rejected]        main -> main (fetch first)
+
+1. if you added your modified files to staging area and not commited yet: then you can do 
+git stash                    ->    to stash your changes temporarily.
+and then do 
+git pull origin <branch name>  ->    to pull the latest changes from remote.
+and then do
+git stash pop                ->    to apply your stashed changes back to your working directory.
+and the do
+git add .
+git commit -m "your message"
+git push origin <branch name>  ->    to push your changes to remote.
+
+2. if you have added your modifed files to staging area and commited already: then you can do
+git reset --soft HEAD~1         ->    to undo the last commit but keep changes staged.
+and then do 
+git stash                    ->    to stash your changes temporarily.
+and then do
+git pull origin <branch name>  ->    to pull the latest changes from remote.
+and then do
+git stash pop                ->    to apply your stashed changes back to your working directory.
+and the do
+git add .
+git commit -m "your message"
+git push origin <branch name>  ->    to push your changes to remote.
+
+3. if you have not added your modified files to staging area: then you can do
+git stash                    ->    to stash your changes temporarily.
+and then do 
+git pull origin <branch name>  ->    to pull the latest changes from remote.
+and then do
+git stash pop                ->    to apply your stashed changes back to your working directory.
+
+---------------------------------------------------------------------------------------------------------------
