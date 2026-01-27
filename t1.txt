@@ -42,9 +42,16 @@ e5db5f1 commit for 3 commands only
 
 
 -------------------------------------------------------------------------------------------------------------------------------
-//senario : if your frnd has did some commit and u haved pull yet and did changes and try to push to the git remote
+//senario : if your frnd has did some commit and u haven't pull yet and did changes to your local repo
+and try to push to the git remote.
 it will give error like this ! [rejected]        main -> main (fetch first)
 
+🚫 What NOT to do (dangerous)
+git push --force
+❌ This can delete your friend’s work
+Use it only if you 100% know what you’re doing
+
+✅ What TO do (safe)
 1. if you added your modified files to staging area and not commited yet: then you can do 
 git stash                    ->    to stash your changes temporarily.
 and then do 
