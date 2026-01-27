@@ -1,2 +1,6 @@
 Day 2
+<<<<<<< Updated upstream
 Git Adcance
+=======
+hell sir how are you
+>>>>>>> Stashed changes
