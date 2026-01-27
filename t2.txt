@@ -10,4 +10,9 @@ hell sir how are you
 1st user msg : sameer1
 >>>>>>> Stashed changes
 
+<<<<<<< Updated upstream
 2nd User : this is the end
+=======
+
+1st user smg : ssameer2
+>>>>>>> Stashed changes
