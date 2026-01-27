@@ -4,3 +4,41 @@ git add                         ->    to stage changes
 git commit -m "[some message]"  ->    to commit changes with a message to commit history.
 git status                      ->    to check the status of your working directory and staging area.
 
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+// commit history viewing
+git log                         ->    See full commit history
+git log --oneline               ->    Clean & short (most used 🔥)
+git log --oneline --graph --all ->    With branch & merge graph (interview favorite)
+git log -5                      ->    to view the last 5 commits
+
+// soft reset : undo commit and keep changes staged
+// hard reset : undo commit and discard changes
+git reset --hard HEAD~1         ->    to undo the last commit and discard changes.(1 can be replaced with any number to go back multiple commits)
+git reset --hard [commit_hash]  ->    to reset to a specific commit and discard all changes after it.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+// after hard reset, you can use git reflog to find the commit hash and recover it
+git log --oneline               ->    to view the commit history in short format.
+6fd8337 little modification
+0a89a0b Git command commit
+e5db5f1 commit for 3 commands only
+
+git reflog                      ->    to view the reference log of all your actions in git.
+HEAD@{0} 6fd8337 commit: little modification   ← current
+HEAD@{1} 0a89a0b commit: Git command commit
+HEAD@{2} e5db5f1 reset: moving to HEAD~1       ← ⚠️ this is where we did hard reset
+HEAD@{3} 54e92e5 commit: commit for 3 commands only once again
+HEAD@{4} e5db5f1 commit (initial)
+
+now you can revcover the commit by using git reset --hard [commit_hash]
+git reset --hard 54e92e5         ->    to recover the commit we can do this.
+
+git log --oneline        // now you can clealy see the out head moved to recovered commit 
+54e92e5 (HEAD -> main) commit for 3 commands only once again
+e5db5f1 commit for 3 commands only
+
+
+-------------------------------------------------------------------------------------------------------------------------------
