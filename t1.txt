@@ -4,6 +4,7 @@ git add                         ->    to stage changes
 git commit -m "[some message]"  ->    to commit changes with a message to commit history.
 git status                      ->    to check the status of your working directory and staging area.
 
+<<<<<<< HEAD
 -------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -12,12 +13,16 @@ git log                         ->    See full commit history
 git log --oneline               ->    Clean & short (most used 🔥)
 git log --oneline --graph --all ->    With branch & merge graph (interview favorite)
 git log -5                      ->    to view the last 5 commits
+=======
+git log --oneline --graph       ->    to view a concise graphical representation of the commit history.
+>>>>>>> 6fd83377b11109a989c42c1e282f23df7dba5f12
 
 // soft reset : undo commit and keep changes staged
 // hard reset : undo commit and discard changes
 git reset --hard HEAD~1         ->    to undo the last commit and discard changes.(1 can be replaced with any number to go back multiple commits)
 git reset --hard [commit_hash]  ->    to reset to a specific commit and discard all changes after it.
 
+<<<<<<< HEAD
 --------------------------------------------------------------------------------------------------------------------------------
 
 // after hard reset, you can use git reflog to find the commit hash and recover it
@@ -42,3 +47,5 @@ e5db5f1 commit for 3 commands only
 
 
 -------------------------------------------------------------------------------------------------------------------------------
+=======
+>>>>>>> 6fd83377b11109a989c42c1e282f23df7dba5f12
