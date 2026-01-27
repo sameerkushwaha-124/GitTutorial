@@ -42,3 +42,5 @@ e5db5f1 commit for 3 commands only
 
 
 -------------------------------------------------------------------------------------------------------------------------------
+//senario : if your frnd has did some commit and u haved pull yet and did changes and try to push to the git remote
+it will give error like this ! [rejected]        main -> main (fetch first)
