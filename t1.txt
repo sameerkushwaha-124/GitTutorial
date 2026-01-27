@@ -6,7 +6,8 @@ git status                      ->    to check the status of your working direct
 
 git log --oneline --graph       ->    to view a concise graphical representation of the commit history.
 
-soft reset : undo commit and keep changes staged
-hard reset : undo commit and discard changes
+// soft reset : undo commit and keep changes staged
+// hard reset : undo commit and discard changes
 git reset --hard HEAD~1         ->    to undo the last commit and discard changes.(1 can be replaced with any number to go back multiple commits)
 git reset --hard [commit_hash]  ->    to reset to a specific commit and discard all changes after it.
+
