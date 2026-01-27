@@ -1,1 +1,6 @@
-Day 1 - 1cr ka hisab.
+Day 1 : Git Commands
+
+git add                         ->    to stage changes
+git commit -m "[some message]"  ->    to commit changes with a message to commit history.
+git status                      ->    to check the status of your working directory and staging area.
+
