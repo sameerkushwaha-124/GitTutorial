@@ -98,7 +98,7 @@ Switch to the branch: If you're not already on the branch you want to rename, sw
 Rename the branch: Use the command git branch -m <new_branch_name> to rename the branch. 
 Verify the rename: You can list all branches using "git branch" to confirm the new name.
 
---------------------
+---------------------------
 2. To see Remote Renaming:
 git branch       ->👉 shows local branches only
 git branch -r    ->👉 shows remote branches only
@@ -110,8 +110,8 @@ git push origin --delete main
 main is the DEFAULT branch on GitHub
 👉 GitHub does NOT allow deleting the default branch
 you deleted main locally
-you ran:  git push origin --delete main        it will
-GitHub said:  ❌ “Nope. This is my current/default branch.”
+you ran:  git push origin --delete main        
+it will GitHub said:  ❌ “Nope. This is my current/default branch.”
 so for that you have to go to you GitHub repo settings and change the default branch 
 to some other branch Then you can delete the main branch from remote by using above
 command
